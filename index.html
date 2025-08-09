@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RaghavendraSP — Remote Sensing & AI</title>
+  <meta name="description" content="Portfolio of RaghavendraSP — AI, Remote Sensing, Water Management, Research">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{--accent:#0d6efd;--muted:#6c757d}
+    body{font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+    .hero{padding:6rem 0;}
+    .project-img{height:180px;object-fit:cover;border-radius:6px}
+    .skill-badge{border-radius:0.5rem;padding:.45rem .7rem;margin:.25rem;background:#f8f9fa;border:1px solid #e9ecef}
+    .nav-link.active{font-weight:600}
+    footer{padding:2rem 0;border-top:1px solid #e9ecef}
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">RaghavendraSP</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero bg-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <h1 class="display-5 fw-bold">Remote Sensing • AI • Water Resources</h1>
+        <p class="lead text-muted">I build machine learning & remote sensing solutions for smarter agriculture, water management, and disaster analysis.</p>
+        <p>
+          <a href="#projects" class="btn btn-primary me-2">View Projects</a>
+          <a href="#contact" class="btn btn-outline-primary">Get in touch</a>
+        </p>
+      </div>
+      <div class="col-lg-5 text-center">
+        <!-- Replace with your headshot in assets/profile.jpg -->
+        <img src="assets/profile.jpg" alt="Profile" class="rounded-circle img-fluid" style="max-width:220px;box-shadow:0 6px 18px rgba(13,110,253,0.08)">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row gy-4 align-items-center">
+      <div class="col-md-8">
+        <h2>About Me</h2>
+        <p class="text-muted">I'm a research scholar and interdisciplinary enthusiast working at the intersection of artificial intelligence and remote sensing. My work focuses on crop classification using ViT models, DSSAT-based crop growth simulation, Sentinel-2 spectral analysis for geological mapping, and practical tools for disaster analysis and water management.</p>
+        <p class="mb-0 text-muted">I enjoy fieldwork, coding in Google Earth Engine, and developing reproducible research tools that help decision-makers and communities.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick facts</h5>
+        <ul class="list-unstyled text-muted">
+          <li>Master of Technology — Geomatics</li>
+          <li>Work: Remote Sensing, AI, Water Resources</li>
+          <li>Tools: GEE, Python, ViT, QGIS</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="mb-0">Selected Projects</h2>
+      <small class="text-muted">Click any card to view details</small>
+    </div>
+
+    <div class="row g-4">
+      <!-- Project Card 1 -->
+      <div class="col-md-6 col-lg-4">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/project_vit.jpg" class="card-img-top project-img" alt="ViT Crop Classification">
+            <div class="card-body">
+              <h5 class="card-title">ViT-based Crop Classification</h5>
+              <p class="card-text text-muted">Patch-based Vision Transformer model trained on GSV and satellite imagery to classify crop types across Thailand and India.</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <small class="text-muted">Python • PyTorch • GEE</small>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="col-md-6 col-lg-4">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/project_dssat.jpg" class="card-img-top project-img" alt="DSSAT Modeling">
+            <div class="card-body">
+              <h5 class="card-title">DSSAT Crop Growth Modeling</h5>
+              <p class="card-text text-muted">Simulating crop responses to water and fertilizer inputs to evaluate sustainable farming strategies under climate scenarios.</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <small class="text-muted">DSSAT • Python • Agronomy</small>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="col-md-6 col-lg-4">
+        <a href="#" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/project_disaster.jpg" class="card-img-top project-img" alt="Disaster HTML Generator">
+            <div class="card-body">
+              <h5 class="card-title">Disaster Analysis HTML Generator</h5>
+              <p class="card-text text-muted">A generator that builds vertical image sliders and TTS-enabled disaster reports for rapid communication and analysis.</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <small class="text-muted">HTML • JavaScript • TTS</small>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Add more project cards as needed -->
+
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="py-5">
+  <div class="container">
+    <h2>Publications & Presentations</h2>
+    <ul class="list-group list-group-flush mt-3">
+      <li class="list-group-item">Paper Title — <a href="#">Link / PDF</a> <small class="text-muted">(Conference / Year)</small></li>
+      <li class="list-group-item">Talk: Next Generation AI for Satellite Image Processing — <a href="#">Slides</a> <small class="text-muted">(FDP)</small></li>
+      <!-- Add items or use Markdown-files when converting to Jekyll -->
+    </ul>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-5 bg-light">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="mt-3">
+      <span class="skill-badge">Google Earth Engine</span>
+      <span class="skill-badge">Python (NumPy, Pandas)</span>
+      <span class="skill-badge">PyTorch • ViT</span>
+      <span class="skill-badge">Remote Sensing • Sentinel-2</span>
+      <span class="skill-badge">DSSAT</span>
+      <span class="skill-badge">QGIS • GDAL</span>
+      <span class="skill-badge">Data Visualization</span>
+      <span class="skill-badge">Research Writing</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Contact</h2>
+        <p class="text-muted">Interested in collaboration, consulting, or speaking invites? Drop a message.</p>
+        <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+
+        <!-- Simple contact form using Formspree (replace action with your Formspree endpoint) -->
+        <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea name="message" class="form-control" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+
+      </div>
+      <div class="col-md-6">
+        <h5>Location</h5>
+        <p class="text-muted">Based in India — open to remote collaborations worldwide.</p>
+
+        <h5 class="mt-4">Social</h5>
+        <p><a href="#">GitHub</a> • <a href="#">LinkedIn</a> • <a href="#">Google Scholar</a></p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white">
+  <div class="container text-center">
+    <p class="mb-1 text-muted">© <span id="year"></span> RaghavendraSP — Built with GitHub Pages</p>
+    <p class="small text-muted mb-0">Replace placeholder images in <code>assets/</code> and update links in <code>index.html</code>.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Auto year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Simple form submit feedback
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function(e){
+    // Let formspree handle submission. Show lightweight feedback.
+    setTimeout(()=>{
+      alert('Thanks — your message was sent!');
+      form.reset();
+    }, 500);
+  });
+</script>
+</body>
+</html>
